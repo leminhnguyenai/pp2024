@@ -45,3 +45,25 @@ def insert_students():
         )
 
         students.append({"id": studentId, "name": studentName, "birthday": studentDoB})
+
+
+# TODO: Add function to input courses
+def input_courses():
+    coursesAmount = input_helper(
+        "Please enter the number of courses ", "That is not a number, try again", int
+    )
+    coursesAmount = int(coursesAmount)
+
+    for i in range(coursesAmount):
+        courseId = input_helper(
+            f"Please enter the course number {i+1} id: ",
+            "This is not a valid id, re enter again: ",
+            int,
+        )
+        courseId = int(courseId)
+        courseName = input_helper(
+            f"Please enter the course number {i+1} name: ",
+            "This is not a valid name, try again ",
+            str,
+        )
+        courses.append({"id": courseId, "name": courseName})

@@ -1,6 +1,9 @@
 from utils import commands_input
 
-commandList = {"i students": commands_input.insert_students}
+commandList = {
+    "i students": commands_input.insert_students,
+    "i courses": commands_input.input_courses,
+}
 
 
 def isValidCommand(userInput):
