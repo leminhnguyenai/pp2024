@@ -1,5 +1,5 @@
 from utils import welcome
-from utils import commands_input
+import process_input
 
 welcome.print_welcome()
-commands_input.listen_to_input()
+process_input.listen_to_input()
