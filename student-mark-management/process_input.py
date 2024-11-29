@@ -1,6 +1,6 @@
-from utils.commands_input import display_commands
+from utils import commands_input
 
-commandList = {"h": display_commands}
+commandList = {"i students": commands_input.insert_students}
 
 
 def isValidCommand(userInput):
@@ -16,9 +16,12 @@ def listen_to_input():
             print("Bye")
             break
 
+        if userInput == "h":
+            commands_input.display_commands()
+            continue
+
         if not isValidCommand(userInput):
             print("Invalid command")
             continue
 
-        # WARNING: This is for the convinence of testing only, change this later
         commandList[userInput]()
