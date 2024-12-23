@@ -2,10 +2,12 @@ import utils
 
 
 class Student:
-    def __init__(self, id, name, dob) -> None:
-        self.__id = id
-        self.__name = name
-        self.__dob = dob
+    def __init__(
+        self,
+    ) -> None:
+        self.__id = -1
+        self.__name = ""
+        self.__dob = ""
         self.__marks = {}
 
     def get_id(self):
