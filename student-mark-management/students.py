@@ -8,10 +8,10 @@ class Student:
         self.__dob = dob
         self.__marks = {}
 
-    def getId(self):
+    def get_id(self):
         return self.__id
 
-    def setId(self, number):
+    def set_id(self, number):
         studentId = utils.input_helper(
             f"Please enter the student number {number+1} id: ",
             "This is not a valid id, re enter again: ",
@@ -20,10 +20,10 @@ class Student:
 
         self.__id = studentId
 
-    def getName(self):
+    def get_name(self):
         return self.__name
 
-    def setName(self, number):
+    def set_name(self, number):
         studentName = utils.input_helper(
             f"Please enter the student number {number+1} name: ",
             "This is not a valid name, re enter again: ",
@@ -32,10 +32,10 @@ class Student:
 
         self.__name = studentName
 
-    def getDob(self):
+    def get_dob(self):
         return self.__dob
 
-    def setDob(self, number):
+    def set_dob(self, number):
         studentDob = utils.input_helper(
             f"Please enter the student number {number+1} dob: ",
             "This is not a valid dob, re enter again: ",
@@ -44,10 +44,10 @@ class Student:
 
         self.__dob = studentDob
 
-    def getMarks(self):
+    def get_marks(self):
         return self.__marks
 
-    def setMark(self, courseName, mark):
+    def set_mark(self, courseName, mark):
         mark = utils.input_helper(
             f"Please enter student's mark for {courseName}",
             "That is not a valid mark, please enter again",
